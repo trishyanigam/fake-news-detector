@@ -1,4 +1,4 @@
-// ================= GET INPUT DATA =================
+
 const data = JSON.parse(localStorage.getItem("analysisInput"));
 
 if (!data) {
@@ -6,12 +6,10 @@ if (!data) {
   window.location.href = "analyze.html";
 }
 
-// ================= UI INIT =================
 document.getElementById("resultTitle").innerText = data.title;
 document.getElementById("verdict").innerText = "Analyzing...";
 document.getElementById("score").innerText = "0%";
 
-// ================= CONFIG =================
 const clickbaitWords = [
   "shocking",
   "breaking",
@@ -21,11 +19,9 @@ const clickbaitWords = [
   "unbelievable"
 ];
 
-// ================= BASE SCORE =================
 let score = 70;
 let reasons = [];
 
-// ================= CLICKBAIT CHECK =================
 if (
   data.content &&
   clickbaitWords.some(word =>
@@ -38,12 +34,10 @@ if (
   reasons.push("✅ Neutral and factual language observed");
 }
 
-// ================= FETCH SIMILAR NEWS =================
 fetchSimilarNews(data.title).then(articles => {
-  // Store for Similar News page
+
   localStorage.setItem("similarArticles", JSON.stringify(articles));
 
-  // ================= TRUST LOGIC =================
   const trustedSources = [
     "reuters",
     "bbc",
@@ -71,10 +65,8 @@ fetchSimilarNews(data.title).then(articles => {
     reasons.push("⚠️ No similar articles found for verification");
   }
 
-  // ================= CLAMP SCORE =================
   score = Math.max(0, Math.min(100, score));
 
-  // ================= FINAL VERDICT =================
   let verdict =
     score >= 75
       ? "Likely Real"
@@ -84,7 +76,6 @@ fetchSimilarNews(data.title).then(articles => {
 
   document.getElementById("verdict").innerText = verdict;
 
-  // ================= REASONS LIST =================
   const reasonList = document.getElementById("reasons");
   reasonList.innerHTML = "";
 
@@ -94,7 +85,6 @@ fetchSimilarNews(data.title).then(articles => {
     reasonList.appendChild(li);
   });
 
-  // ================= SCORE ANIMATION =================
   const circle = document.getElementById("progressCircle");
   const scoreText = document.getElementById("score");
 

@@ -1,6 +1,5 @@
 const container = document.getElementById("similarContainer");
 
-// Get stored articles
 const articles =
   JSON.parse(localStorage.getItem("similarArticles")) || [];
 
