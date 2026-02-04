@@ -1,5 +1,4 @@
 const container = document.getElementById("similarContainer");
-
 const articles =
   JSON.parse(localStorage.getItem("similarArticles")) || [];
 
@@ -29,7 +28,6 @@ if (articles.length === 0) {
         Read Original Article →
       </a>
     `;
-
     container.appendChild(card);
   });
 }
