@@ -1,0 +1,124 @@
+/* ================= HEADER ================= */
+.analyze-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.analyze-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+
+.analyze-header p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ================= MAIN SECTION ================= */
+.analyze-section {
+  padding: 40px 20px 100px;
+}
+
+.analyze-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ================= INPUT CARD ================= */
+.analyze-card {
+  background: var(--card);
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.analyze-card h2 {
+  margin-bottom: 20px;
+}
+
+.analyze-card label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: 600;
+}
+
+.analyze-card input,
+.analyze-card textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: var(--text);
+}
+
+.analyze-card textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.full {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* ================= INFO CARD ================= */
+.info-card {
+  background: linear-gradient(
+    135deg,
+    rgba(91, 91, 240, 0.08),
+    rgba(159, 159, 255, 0.12)
+  );
+  padding: 36px;
+  border-radius: 24px;
+}
+
+.info-card h3 {
+  margin-bottom: 16px;
+}
+
+.info-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-card li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.info-note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .analyze-container {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .analyze-header h1 {
+    font-size: 2.2rem;
+  }
+}

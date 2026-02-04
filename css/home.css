@@ -1,0 +1,201 @@
+/* ================= HERO ================= */
+.hero-landing {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.4rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.hero-actions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Glow */
+.hero-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--primary), transparent 70%);
+  opacity: 0.25;
+  filter: blur(120px);
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 90px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-center {
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+/* ================= FEATURES ================= */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: var(--card);
+  padding: 36px 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card span {
+  font-size: 2.4rem;
+}
+
+.feature-card h3 {
+  margin: 16px 0 10px;
+}
+
+.feature-card p {
+  color: var(--muted);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= ANALYZE PREVIEW ================= */
+.analyze-preview {
+  background: linear-gradient(
+    135deg,
+    rgba(91, 91, 240, 0.06),
+    rgba(159, 159, 255, 0.08)
+  );
+  border-radius: 40px;
+}
+
+.analyze-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.analyze-text h2 {
+  margin-bottom: 20px;
+}
+
+.section-subtext {
+  color: var(--muted);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.analyze-features {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.analyze-features li {
+  margin-bottom: 10px;
+}
+
+/* Right card */
+.analysis-card {
+  background: var(--card);
+  padding: 40px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.fake-score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin: 20px 0;
+}
+
+.fake-bars span {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+/* ================= CTA ================= */
+.cta {
+  margin: 120px auto;
+  padding: 80px 40px;
+  border-radius: 30px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+.cta h2 {
+  font-size: 2.3rem;
+  margin-bottom: 14px;
+}
+
+.cta p {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .analyze-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .analyze-text {
+    order: 1;
+  }
+
+  .analyze-visual {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+}

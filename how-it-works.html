@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works | TruthGuard</title>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/how-it-works.css" />
+
+  <!-- JS -->
+  <script defer src="js/theme.js"></script>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="logo">
+    <span class="logo-icon">T</span>
+    <span class="logo-text">TruthGuard</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="analyze.html">Analyze</a>
+    <a href="sources.html">Sources</a>
+    <a href="similar.html">Similar News</a>
+    <a class="active" href="how-it-works.html">How It Works</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+</header>
+
+<!-- ============ HEADER ============ -->
+<section class="how-header">
+  <h1>How TruthGuard Works</h1>
+  <p>
+    TruthGuard combines AI-based text analysis with real-time news
+    verification to help you identify misleading or fake news.
+  </p>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="how-steps">
+
+  <div class="step-card">
+    <span class="step-number">1</span>
+    <h3>User Submits News</h3>
+    <p>
+      The user pastes a news headline, article, or URL into the
+      Analyze page.
+    </p>
+  </div>
+
+  <div class="step-card">
+    <span class="step-number">2</span>
+    <h3>AI Language Analysis</h3>
+    <p>
+      The system analyzes the text for bias, sensational language,
+      and misleading patterns.
+    </p>
+  </div>
+
+  <div class="step-card">
+    <span class="step-number">3</span>
+    <h3>Source Verification</h3>
+    <p>
+      The news source is checked against a database of trusted and
+      untrusted publishers.
+    </p>
+  </div>
+
+  <div class="step-card">
+    <span class="step-number">4</span>
+    <h3>Similar News Matching</h3>
+    <p>
+      Related articles are fetched from trusted news APIs and
+      compared for relevance.
+    </p>
+  </div>
+
+  <div class="step-card">
+    <span class="step-number">5</span>
+    <h3>Credibility Score Generation</h3>
+    <p>
+      A final credibility score is calculated using weighted
+      factors like source trust and content similarity.
+    </p>
+  </div>
+
+</section>
+
+<!-- ============ SCORING LOGIC ============ -->
+<section class="how-logic">
+  <h2>Credibility Score Logic</h2>
+
+  <div class="logic-grid">
+    <div class="logic-card">
+      <h4>Trusted Source</h4>
+      <p>+40 points</p>
+    </div>
+
+    <div class="logic-card">
+      <h4>Similar Articles Found</h4>
+      <p>+25 points</p>
+    </div>
+
+    <div class="logic-card">
+      <h4>Neutral Language</h4>
+      <p>+20 points</p>
+    </div>
+
+    <div class="logic-card warning">
+      <h4>Sensational Language</h4>
+      <p>-20 points</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCLAIMER ============ -->
+<section class="how-note">
+  <p>
+    TruthGuard provides AI-assisted analysis for informational purposes only.
+    Users are encouraged to cross-check information independently.
+  </p>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  © 2026 TruthGuard · Transparency through technology
+</footer>
+
+</body>
+</html>

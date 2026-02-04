@@ -1,0 +1,13 @@
+# Ignore API keys / config files
+js/config.js
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor settings
+.vscode/
+.idea/
+
+# Ignore logs
+*.log
