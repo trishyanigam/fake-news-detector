@@ -1,4 +1,4 @@
-/* ================= HERO ================= */
+
 .hero-landing {
   min-height: 85vh;
   display: flex;
@@ -31,7 +31,6 @@
   margin: 0 auto;
 }
 
-/* Buttons */
 .hero-actions {
   margin-top: 36px;
   display: flex;
@@ -40,7 +39,6 @@
   flex-wrap: wrap;
 }
 
-/* ================= HERO BADGES ================= */
 .hero-badges {
   display: flex;
   justify-content: center;
@@ -62,7 +60,6 @@
   backdrop-filter: blur(6px);
 }
 
-/* ================= HERO STATS ================= */
 .hero-stats {
   display: flex;
   justify-content: center;
@@ -88,7 +85,6 @@
   color: var(--muted);
 }
 
-/* ================= GLOW ================= */
 .hero-glow {
   position: absolute;
   width: 520px;
@@ -98,7 +94,6 @@
   filter: blur(120px);
 }
 
-/* ================= SECTIONS ================= */
 .section {
   padding: 90px 40px;
   max-width: 1200px;
@@ -114,7 +109,6 @@
   margin-bottom: 50px;
 }
 
-/* ================= FEATURES ================= */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -146,7 +140,6 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* ================= ANALYZE PREVIEW ================= */
 .analyze-preview {
   background: linear-gradient(
     135deg,
@@ -182,7 +175,6 @@
   margin-bottom: 10px;
 }
 
-/* Right card */
 .analysis-card {
   background: var(--card);
   padding: 40px;
@@ -204,7 +196,6 @@
   color: var(--muted);
 }
 
-/* ================= CTA ================= */
 .cta {
   margin: 120px auto;
   padding: 80px 40px;
@@ -225,14 +216,12 @@
   opacity: 0.95;
 }
 
-/* ================= FOOTER ================= */
 .footer {
   text-align: center;
   padding: 40px;
   opacity: 0.6;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .analyze-grid {
     grid-template-columns: 1fr;

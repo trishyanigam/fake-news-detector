@@ -1,4 +1,4 @@
-/* ================= HEADER ================= */
+
 .similar-header {
   text-align: center;
   padding: 80px 20px 40px;
@@ -17,7 +17,6 @@
   line-height: 1.6;
 }
 
-/* ================= SECTION ================= */
 .similar-section {
   padding: 40px 20px 80px;
 }
@@ -29,7 +28,6 @@
   gap: 30px;
 }
 
-/* ================= CARD ================= */
 .similar-card {
   background: var(--card);
   padding: 30px;
@@ -42,7 +40,6 @@
   box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
 }
 
-/* Top row */
 .similar-top {
   display: flex;
   justify-content: space-between;
@@ -55,28 +52,24 @@
   font-size: 1.2rem;
 }
 
-/* Meta */
 .meta {
   margin: 10px 0;
   font-size: 0.9rem;
   color: var(--muted);
 }
 
-/* Description */
 .desc {
   margin: 12px 0 18px;
   color: var(--muted);
   line-height: 1.6;
 }
 
-/* Read link */
 .read-link {
   text-decoration: none;
   font-weight: 600;
   color: var(--primary);
 }
 
-/* ================= MATCH BADGES ================= */
 .match {
   padding: 6px 14px;
   border-radius: 999px;
@@ -100,7 +93,6 @@
   color: #ef4444;
 }
 
-/* ================= NOTE ================= */
 .similar-note {
   max-width: 800px;
   margin: auto;
@@ -110,14 +102,12 @@
   font-size: 0.9rem;
 }
 
-/* ================= FOOTER ================= */
 .footer {
   text-align: center;
   padding: 40px;
   opacity: 0.6;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 700px) {
   .similar-top {
     flex-direction: column;

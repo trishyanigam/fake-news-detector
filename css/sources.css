@@ -1,4 +1,4 @@
-/* ================= HEADER ================= */
+
 .sources-header {
   text-align: center;
   padding: 80px 20px 40px;
@@ -17,7 +17,6 @@
   line-height: 1.6;
 }
 
-/* ================= SOURCES GRID ================= */
 .sources-section {
   padding: 40px 20px 80px;
 }
@@ -30,7 +29,6 @@
   gap: 30px;
 }
 
-/* ================= SOURCE CARD ================= */
 .source-card {
   background: var(--card);
   padding: 30px;
@@ -58,7 +56,6 @@
   font-size: 0.95rem;
 }
 
-/* ================= BADGES ================= */
 .badge {
   display: inline-block;
   margin-top: 10px;
@@ -83,7 +80,6 @@
   color: #ef4444;
 }
 
-/* ================= DISCLAIMER ================= */
 .sources-note {
   max-width: 800px;
   margin: auto;
@@ -93,14 +89,12 @@
   font-size: 0.9rem;
 }
 
-/* ================= FOOTER ================= */
 .footer {
   text-align: center;
   padding: 40px;
   opacity: 0.6;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 600px) {
   .sources-header h1 {
     font-size: 2.2rem;

@@ -14,10 +14,8 @@ function analyzeNews() {
     url
   };
 
-  // Save user input
   localStorage.setItem("analysisInput", JSON.stringify(data));
 
-  // Redirect to result page
   window.location.href = "result.html";
 }
 

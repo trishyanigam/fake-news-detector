@@ -10,7 +10,6 @@ body {
   color: var(--text);
 }
 
-/* ---------- NAVBAR ---------- */
 .navbar {
   position: sticky;
   top: 0;
@@ -65,7 +64,6 @@ nav a.active::after {
   cursor: pointer;
 }
 
-/* ---------- COMMON ---------- */
 .primary-btn {
   background: var(--primary);
   color: white;
